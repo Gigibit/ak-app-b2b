@@ -1,0 +1,11 @@
+
+<p routerLink="/shipping/cart">
+  <span class="glyphicon glyphicon-shopping-cart"></span>
+</p>
+<div class="menu-container">
+  <h1 align="center">Menu</h1>
+  <div class="dish" *ngFor="let dish of dishes" (click)="openDialog(dish)">
+    <p class="dish-name">{{dish.name}}</p>
+    <p class="dish-price">{{dish.price}}€</p>
+  </div>
+</div>

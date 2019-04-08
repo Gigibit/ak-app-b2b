@@ -1,0 +1,29 @@
+.menu-container{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    display: block;
+    width: 54%;
+    margin: 0 auto;
+}
+.dish{
+    margin: 15px;
+    position: relative;
+    background: antiquewhite;
+    height: 70px;
+}
+.dish-name{
+    font-style: italic;
+    padding: 10px;
+}
+.dish-price{
+    position: absolute;
+    font-size: 27px;
+    font-weight: bold;
+    top: 15px;
+    right: 15px;
+    padding: 0;
+    margin: 0;
+}
