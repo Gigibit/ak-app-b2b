@@ -34,6 +34,7 @@ export class CartService {
     return null
   }
 
+
   updateSession(){
     if(this.sessionStorageAvailable){
       window.sessionStorage.setItem(CART_KEY, JSON.stringify(this.dishes))

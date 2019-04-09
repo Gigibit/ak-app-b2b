@@ -3,9 +3,9 @@ import { MatBottomSheetRef, MAT_BOTTOM_SHEET_DATA } from '@angular/material';
 import { Dish } from '../model/dish';
 
 @Component({
-  selector: 'app-add-to-chart-modal',
-  templateUrl: './add-to-chart-modal.component.html',
-  styleUrls: ['./add-to-chart-modal.component.css']
+  selector: 'app-pay',
+  templateUrl: './pay.component.html',
+  styleUrls: ['./pay.component.css']
 })
 export class PayComponent implements OnInit {
 

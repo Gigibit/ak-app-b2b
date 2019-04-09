@@ -1,0 +1,44 @@
+{
+  "_from": "@satispay/web-button-factory@^1.4.2",
+  "_id": "@satispay/web-button-factory@1.4.2",
+  "_inBundle": false,
+  "_integrity": "sha512-I+4i6e2UO8KKEuHg/ragyXShEktgzCVNlMqy/Pahc6NjPgryT98xslRCM5fjBNoqB8xU5nNrxIQTSziY7dA4pg==",
+  "_location": "/@satispay/web-button-factory",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@satispay/web-button-factory@^1.4.2",
+    "name": "@satispay/web-button-factory",
+    "escapedName": "@satispay%2fweb-button-factory",
+    "scope": "@satispay",
+    "rawSpec": "^1.4.2",
+    "saveSpec": null,
+    "fetchSpec": "^1.4.2"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@satispay/web-button-factory/-/web-button-factory-1.4.2.tgz",
+  "_shasum": "3c9efd884a9dda3afbd574f3a24ad21426131ba8",
+  "_spec": "@satispay/web-button-factory@^1.4.2",
+  "_where": "C:\\Users\\luigi\\ak\\ak-app-b2b",
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "This library is made for React, Angular and other frameworks.",
+  "devDependencies": {
+    "tslint": "^5.9.1",
+    "tslint-config-standard": "^7.0.0",
+    "typescript": "^2.7.2"
+  },
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "name": "@satispay/web-button-factory",
+  "scripts": {
+    "build": "tsc -p .",
+    "lint": "tslint -p ."
+  },
+  "types": "./dist/index.d.ts",
+  "version": "1.4.2"
+}
