@@ -2,8 +2,9 @@
 <div class="menu-container">
     <h1 align="center">Shipping Cart</h1>
     <div class="dish" *ngFor="let dish of dishes">
-      <p class="dish-name">{{dish.name}}</p>
-      <p class="dish-quantity">{{dish.quantity}}</p>
-      <p class="dish-price">{{dish.price}}€</p>
+      <p class="dish-name">{{dish.name}}  X {{dish.quantity}}</p>
+      <p class="dish-quantity">{{dish.price*dish.quantity}} €</p>
     </div>
+    <button (click)="justSend()">Just send</button>
+    <button (click)="pay">Pay</button>
   </div>

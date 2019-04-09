@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AddToChartModalComponent } from './add-to-chart-modal/add-to-chart-modal.component';
 import { MatBottomSheetModule, MAT_BOTTOM_SHEET_DEFAULT_OPTIONS, MatDialogModule, MatFormFieldModule, MatButtonModule, MatInputModule, MatDialogRef } from '@angular/material';
 import { FormsModule } from '@angular/forms';
+import { NgxStripeModule } from 'ngx-stripe';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { FormsModule } from '@angular/forms';
     MatFormFieldModule, 
     MatButtonModule, 
     MatInputModule,
-    MatBottomSheetModule
+    NgxStripeModule.forRoot('***your-stripe-publishable key***'),
+    MatBottomSheetModule,
   ],
   providers: [
     {provide: MAT_BOTTOM_SHEET_DEFAULT_OPTIONS, useValue: {hasBackdrop: false}}

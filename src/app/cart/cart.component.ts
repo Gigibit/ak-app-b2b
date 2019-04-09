@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Dish } from '../model/dish';
 import { CartService } from '../cart.service';
+import { MatBottomSheet } from '@angular/material';
 
 @Component({
   selector: 'app-cart',
@@ -10,7 +11,8 @@ import { CartService } from '../cart.service';
 export class CartComponent implements OnInit {
   dishes: Dish[]
   constructor(
-    private cartService: CartService
+    private cartService: CartService,
+    private bottomSheet: MatBottomSheet
   ) { }
 
   ngOnInit() {
@@ -18,5 +20,17 @@ export class CartComponent implements OnInit {
     .list()
     .subscribe(dishes => this.dishes = dishes)
   }
+  pay(){
+    const dialogRef = this.bottomSheet.open(AddToChartModalComponent, {
+      data: this.dishes
+    });
 
+    dialogRef.afterDismissed().subscribe(result => {
+      if(result){
+      }
+    });
+  }
+  justSend(){
+
+  }
 }

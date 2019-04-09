@@ -28,15 +28,14 @@ export class DishComponent implements OnInit {
   }
 
   openDialog(dish:Dish): void {
-    console.log(dish)
-    const dialogRef = this.bottomSheet.open(AddToChartModalComponent, {
+    let dialogRef = this.bottomSheet.open(AddToChartModalComponent, {
       data: dish
     });
 
     dialogRef.afterDismissed().subscribe(result => {
       if(result){
         dish.quantity = result
-        this.cartService.add(dish)  
+        this.cartService.add(dish)
       }
     });
   }
